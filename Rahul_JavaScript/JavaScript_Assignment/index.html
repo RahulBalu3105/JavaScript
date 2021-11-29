@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/styles.css">
+        <script src="../JavaScript_Assignment/Script/script.js"></script>
+        <title>Form Validation</title>
+        <style>
+                  
+        </style>
+        <script>
+        
+
+        </script>
+    </head>
+<body>
+    <form  onsubmit="return validate()">   
+    <div class="container">
+        <div align="center" id="header">
+        <h1>Submit your application</h1>
+        <h3>.Net Developer(Fresher)</h3>
+        <hr>
+        </div>
+        
+            <h4>Personal Information</h4>
+        
+            Name as per ID proof<span>*</span>
+            <input  type="text" id="name">
+            <label id="check1" style="color: red; visibility: hidden;" >Name is Required</label><br><br>
+            Father's Name<span>*</span>
+            <input type="text" id="fathername">
+            <label id="check2" style="color: red; visibility: hidden;" >Last Name is Required</label><br><br>
+        
+            Email<span>*</span>
+            <input type="text" placeholder="" id="email">
+            <label id="check3" style="color: red; visibility: hidden;" >Please Enter a Valid Email Address</label><br><br>
+            Date of Birth<span>*</span>
+            <input type="text" id="dob" placeholder="DD/MM/YYYY">
+            <label id="check4" style="color: red; visibility: hidden;" >Required</label><br><br>
+            Mobile Number<span>*</span>
+            <input type="text" id="number">
+            <label id="check5" style="color: red; visibility: hidden;" >Enter Valid Mobile No.</label><br><br>
+        
+            Current Address<span>*</span>
+            <input type="text" placeholder="Address Line1" id="address1">
+            <label id="check6" style="color: red; visibility: hidden;" >Address is Required</label><br><br>
+            <input type="text" placeholder="Address Line2" id="address2">
+            <input type="text" placeholder="City" id="city">
+            <label id="check7" style="color: red; visibility: hidden;" >City is Required</label><br><br>
+            <select  id="state">
+                <option value="option 1">Tamil Nadu</option>
+                <option value="option 2">Karnataka</option>
+                <option value="option 3">Kerala</option>
+                <option value="option 3">Telangana</option>
+                <button  >Submit</button>
+            </select>
+            <input type="text" placeholder="Zip Code" id="zipcode">
+            <label id="check8" style="color: red; visibility: hidden;" >Zip Code is Required</label><br><br>
+
+            Permanent Address<span>*</span>
+            <input type="checkbox">Same as current Address
+            <input type="text" placeholder="Address Line1" id="address1">
+            <label id="check" style="color: red; visibility: hidden;" >Address is Required</label><br><br>
+            <input type="text" placeholder="Address Line2" id="address2">
+            <input type="text" placeholder="City" id="city">
+            <label id="check" style="color: red; visibility: hidden;" >City is Required</label><br><br>
+            <input type="text" placeholder="State" id="state">
+            <input type="text" placeholder="Zip Code" id="zipcode">
+            <label id="check" style="color: red; visibility: hidden;" >Zip Code is Required</label><br><br>
+             
+            <p>Upload profile photo <span>*</span> (JPG/PNG Format only)</p>
+            <p>please upload a photo of yourself.your face should be clearly visible.Make sure the Image size does not exceed 500KB</p>
+            <input type="file">
+            <label id="check9" style="color: red; visibility: hidden;" >Upload your profile photo</label><br><br>
+            
+            <button type="submit" id="resume" onsubmit="return validate()">NEXT</button>
+       </form>
+        
+    </div>
+    </body>
+</html>
